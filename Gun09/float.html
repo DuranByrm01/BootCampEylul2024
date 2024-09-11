@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float ile çalışmak ve Float Temizliği</title>
+    <style>
+        
+        .hepsi{
+            border: 5px dashed black;
+        }
+        .Kutu{
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            background-color: orange;
+            margin: 10px;
+            color: white;
+            float: right;
+        }
+
+        div.Kutu:nth-child(2n){
+            float: left;
+        }
+        
+        /* float için eski çözüm  */
+
+        .temizlik{
+            clear: both;
+        }
+
+        /* float için css ile yeni çözüm  */
+
+        .hepsi::after{
+            content: "İnanmıyorum";
+            display: block;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- div.hepsi>div.Kutu*12>{kutu $} -->
+    <div class="hepsi">
+        <div class="Kutu">kutu 1</div>
+        <div class="Kutu">kutu 2</div>
+        <div class="Kutu">kutu 3</div>
+        <div class="Kutu">kutu 4</div>
+        <div class="Kutu">kutu 5</div>
+        <div class="Kutu">kutu 6</div>
+        <div class="Kutu">kutu 7</div>
+        <div class="Kutu">kutu 8</div>
+        <div class="Kutu">kutu 9</div>
+        <div class="Kutu">kutu 10</div>
+        <div class="Kutu">kutu 11</div>
+        <div class="Kutu">kutu 12</div>
+        <!-- <div class="temizlik"></div> -->
+    </div>
+
+</body>
+</html>

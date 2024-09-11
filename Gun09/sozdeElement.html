@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sözde Element</title>
+    <style>
+        html{
+            font-size: 24px;
+        }
+        p{
+            text-align: justify;
+        }
+        p::first-letter{
+            font-size: 2em;
+            float: left;
+            line-height: .75;
+            font-weight: bold;
+        }
+        p::first-line{
+            text-decoration: underline;
+        }
+        p::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        main{
+            background-color: #21D4FD;
+            background-image: linear-gradient           (19deg, #21D4FD 0%, #B721FF 100%);
+            max-width: 600px;
+            padding: 36px;
+            margin: 40px auto 20px;
+            border-radius: 10px;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+        main:hover{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        @media(max-witdh: 680px){
+            main{
+                margin: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi rerum temporibus nesciunt tempore quia itaque? Voluptate perspiciatis praesentium dolorum, nam vero, veniam, aperiam iure impedit error obcaecati dolorem eligendi ex?</p>
+        <p>Doloremque, porro ratione dicta dolores numquam voluptatum saepe, inventore beatae temporibus suscipit molestiae atque doloribus quasi repellendus rem quod consectetur sed eligendi rerum distinctio quo consequuntur dolor, nobis maiores. Quo!</p>
+        <p>Sapiente porro hic at deleniti minima totam nostrum suscipit nisi quibusdam molestias, eos rem impedit possimus officiis eaque blanditiis ex quasi atque quam nesciunt? Ipsum, nisi voluptatum. Voluptates, ut nihil.</p>
+        <p>Pariatur ducimus dignissimos expedita quos, nihil voluptatem nostrum perferendis quam similique vero recusandae, dolorum veniam! Ex numquam id, aut velit voluptatem magnam facere voluptates? Vero, distinctio alias. Officiis, molestiae inventore.</p>
+    </main>
+</body>
+</html>
