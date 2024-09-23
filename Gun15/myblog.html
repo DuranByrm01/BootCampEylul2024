@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #F1F1F1;
+            justify-content: center;
+        }
+        .container{
+            max-width: 90vw;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .tag1{
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+        .tag2{
+            color: #979797;
+        }
+        .headerContainer{
+            text-align: center;
+            padding: 32px 16px 32px 16px;
+        }
+        .myBlogHead{
+            margin-bottom: 10px;
+        }
+        main{
+            max-width: 1200px;
+        }
+        .col1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            width: 600px;
+            
+        }
+        .col2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            width: 600px;
+        }
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .cardOtherBox{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .otherBox{
+            display: flex;
+        }
+        .commentsNumber{
+            margin-left: 5px;
+            background-color: black;
+            color: white;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        .myButton{
+           padding: 15px;
+           border: 1px solid gray;
+        }
+        .myButton:hover{
+            background-color: #CCCCCC;
+            border: 1px solid gray;
+        }
+        .cardTextBox{
+            padding: 10px;
+        }
+        .cardTextBox > * {
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        .col3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="headerContainer">
+            <h1 class="myBlogHead">MY BLOG</h1>
+            <p>Welcome to the blog of <span class="tag1">unknown</span></p>
+        </header>
+        <main>
+            <div class="col1">
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="woods.jpg" alt="">
+                    </div>
+                    <div class="cardTextBox">
+                        <h1>TITLE HEADING</h1>
+                        <h4>Title description,<span class="tag2"> April 7, 2014</span></h4>
+                        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                    </div>
+                    <div class="cardOtherBox">
+                        <button class="myButton">READ MORE >></button>
+                        <div class="otherBox">
+                            <p>Comments</p>
+                            <p class="commentsNumber">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="bridge.jpg" alt="">
+                    </div>
+                    <div class="cardTextBox">
+                        <h1>BLOG ENTRY</h1>
+                        <h4>Title description,<span class="tag2"> April 7, 2014</span></h4>
+                        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                    </div>
+                    <div class="cardOtherBox">
+                        <button class="myButton">READ MORE >></button>
+                        <div class="otherBox">
+                            <p>Comments</p>
+                            <p class="commentsNumber">2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section>
+            <div class="col3">
+                <div class="card">
+                    <div class="cardImg">
+                        <img src="avatar_g.jpg" alt="">
+                    </div>
+                    <div class="cardTextBox">
+                        <h1>My Name</h1>
+                        <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div> 
+        </section>
+    </div>
+</body>
+</html>
