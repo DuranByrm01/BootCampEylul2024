@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="../ortak/yaz.js"></script>
+    <script>
+
+        function ekranaTarihiVeSaatiYazdır(){
+            let suAn = new Date();
+            ciz(suAn.toLocaleTimeString())
+            
+        }
+
+       
+
+        function ayinGunu(){
+            let suAn = new Date();
+            return suAn.getDate();
+        }
+
+        let kacinci = ayinGunu();
+        ciz("Bu gün ayın "+  kacinci  + ". gününcüdür")
+        function arkaPlaniBoya(renk){
+            document.body.style.background = renk;
+        }
+
+        arkaPlaniBoya("linear-gradient( to right, red, white)");
+
+
+        function birFazlasi(x){
+            return x + 1;
+        }
+        
+        let sayı = 3;
+        sayı = birFazlasi(sayı);
+        ciz(sayı);
+    </script>
+</body>
+</html>

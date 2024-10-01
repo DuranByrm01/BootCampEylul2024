@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Orbitron", sans-serif;
+}
+
+.saatDiv{
+    background-color: #795757;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.saat{
+    font-size: 4em;
+    color: white;
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.day{
+    padding: 5px;
+    color: white;
+}
+
+button{
+    padding: 5px;
+}
