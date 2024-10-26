@@ -1,0 +1,9 @@
+.todos input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+}
+
+.done .todo-title {
+    text-decoration: line-through;
+}
